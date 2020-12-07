@@ -7,5 +7,6 @@ module.exports = {
         path: path.resolve(__dirname, 'app')
     },
     mode: 'development',
+    // to watch the file and automatically rebuild on file change
     watch: true
 }
