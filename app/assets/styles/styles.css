@@ -1,0 +1,15 @@
+body {
+    color: green;
+}
+
+/* create variable */
+$mainBlue: #0c8df0;
+
+/* target div called large-hero */
+.large-hero {
+
+    /* use nested CSS */
+    h2 {
+        color: $mainBlue;
+    }
+}
