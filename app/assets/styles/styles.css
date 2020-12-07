@@ -1,15 +1,8 @@
-body {
-    color: green;
-}
+/* import normalize.css package - resets CSS to make all browsers render consistently */
+@import 'normalize.css';
 
-/* create variable */
-$mainBlue: #0c8df0;
-
-/* target div called large-hero */
-.large-hero {
-
-    /* use nested CSS */
-    h2 {
-        color: $mainBlue;
-    }
-}
+/* import css modules */
+@import 'base/_global.css';
+@import 'base/_variables.css';
+@import 'modules/_large-hero.css';
+@import 'modules/_btn.css';
