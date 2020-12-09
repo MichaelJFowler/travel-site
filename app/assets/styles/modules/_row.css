@@ -1,6 +1,8 @@
 .row {
 
-    @mixin clearfix;
+    @mixin clearfix {}
+
+    ;
 
     /* 
     The far right column has padding which is a waste of space 
