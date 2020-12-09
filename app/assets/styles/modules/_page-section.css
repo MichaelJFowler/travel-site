@@ -1,0 +1,14 @@
+/* there are numerous areas that require spacing, therefore this is a design element */
+.page-section {
+    padding: 1.2rem 0;
+
+    @mixin atMedium {
+        padding: 4.5rem 0;
+    }
+
+    &--blue {
+        /* use -- to modify class*/
+        background-color: $mainBlue;
+        color: #fff;
+    }
+}
