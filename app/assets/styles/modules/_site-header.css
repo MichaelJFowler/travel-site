@@ -9,6 +9,11 @@
     @mixin atMedium {
         /* postcss-hexrgba converts a hex value into a rgba value*/
         background-color: rgba($mainBlue, .3);
+        position: fixed;
+
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
 
     &--is-expanded {
@@ -25,6 +30,7 @@
         position: absolute;
         top: 0;
         left: 50%;
+        transition: transform 0.3s ease-out;
         transform: translateX(-50%) scale(.8);
         transform-origin: 50% 0;
         background-color: $mainBlue;
@@ -33,6 +39,12 @@
         @mixin atMedium {
             left: auto;
             transform: translateX(0);
+
+            /* if the site header dark class is used */
+            .site-header--dark & {
+                transform: scale(.55);
+
+            }
         }
     }
 
